@@ -1,41 +1,53 @@
-# Visual Studio specific
+# Visual Studio
 .vs/
-*.suo
+.vscode/
+.idea/
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]Release/
+[Dd]ReleasePublic/
+x64/
+x86/
+x64/Release/
+x64/Debug/
+x86/Release/
+x86/Debug/
+# User-specific files
+.vs2019/
+.vs2017/
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+# Windows Installer files (for development)
 *.user
 *.userosscache
-*.sln.docstates
-
-# Build output
-bin/
-obj/
-
-# NuGet packages
-packages/
-*.nupkg
-project.lock.json
-
-# .NET Core dependencies
-project.assets.json
+*.suo
+*.userprefs
+# Thumbs.db
+Thumbs.db
+# Windows Installer files for Build Tools
 *.dll
 *.exe
 *.pdb
+*.idb
+*.ilk
+*.lib
+*.exp
+# Other temporary files
 *.log
-
-# Logs
-logs/
-*.log
-
-# User-specific config
-appsettings.Development.json
-secrets.json
-
-# Node.js dependencies (if applicable)
-node_modules/
-
-# JetBrains Rider
-.idea/
-*.iml
-
-# macOS/Linux system files
-.DS_Store
-Thumbs.db
+*.bak
+*.swp
+# Recipe and TLog files
+*.recipe
+*.tlog
+# C++ specific build output files
+*.obj
+*.pch
+*.pdb
+*.idb
+*.iobj
+*.ipdb
+*.rsp
