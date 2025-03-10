@@ -1,0 +1,41 @@
+# Visual Studio specific
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+
+# NuGet packages
+packages/
+*.nupkg
+project.lock.json
+
+# .NET Core dependencies
+project.assets.json
+*.dll
+*.exe
+*.pdb
+*.log
+
+# Logs
+logs/
+*.log
+
+# User-specific config
+appsettings.Development.json
+secrets.json
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# JetBrains Rider
+.idea/
+*.iml
+
+# macOS/Linux system files
+.DS_Store
+Thumbs.db
