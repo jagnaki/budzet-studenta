@@ -1,20 +1,32 @@
-﻿// budzet-studenta.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//
-
+﻿#include <string>
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <Windows.h>
+#include <CommCtrl.h>
+#include <iomanip>
 
-int main()
+using namespace std;
+
+HWND hwnd;
+HWND hwndLogowanie;
+HWND hwndRejestracji;
+MSG Komunikat;
+
+HWND UtworzOknoRejestracji(HINSTANCE, const char*, const char*);
+
+string currentUser;
+bool zalogowano = false;
+
+int szerokoscOkna = 500;
+int wysokoscOkna = 500;
+
+// Oblicz pozycję przycisków na środku okna
+int pozycjaX = (szerokoscOkna - 100) / 2; // 100 to szerokość przycisku
+int przyciskOdstepY = 40; // Odstęp między przyciskami
+int startowaPozycjaY = (wysokoscOkna - 30 - 3 * przyciskOdstepY) / 2; // 30 to wysokość przycisku
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-    std::cout << "Hello World!\n";
+    WNDCLASSEX wc;
 }
-
-// Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
-// Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
-
-// Porady dotyczące rozpoczynania pracy:
-//   1. Użyj okna Eksploratora rozwiązań, aby dodać pliki i zarządzać nimi
-//   2. Użyj okna programu Team Explorer, aby nawiązać połączenie z kontrolą źródła
-//   3. Użyj okna Dane wyjściowe, aby sprawdzić dane wyjściowe kompilacji i inne komunikaty
-//   4. Użyj okna Lista błędów, aby zobaczyć błędy
-//   5. Wybierz pozycję Projekt > Dodaj nowy element, aby utworzyć nowe pliki kodu, lub wybierz pozycję Projekt > Dodaj istniejący element, aby dodać istniejące pliku kodu do projektu
-//   6. Aby w przyszłości ponownie otworzyć ten projekt, przejdź do pozycji Plik > Otwórz > Projekt i wybierz plik sln
